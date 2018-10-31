@@ -1,0 +1,390 @@
+/*images courtesy google images and pexels.com
+
+all svg's self made
+*/
+
+
+body {
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.st0 {
+  fill: #1D1D1D;
+  stroke: #000000;
+  stroke-width: 0.25;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 0.25;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #121212;
+  stroke: #FFFFFF;
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: #393939;
+  stroke: #000000;
+  stroke-width: 0.25;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+	cursor:pointer;
+}
+
+.st4 {
+  fill: #393939;
+  stroke: #FFFFFF;
+  stroke-width: 0.5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+	cursor:pointer;
+}
+
+.stx {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+.iphone {
+  width: 174px;
+  height: 367px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.holder {
+  height: 100vh;
+  min-height: 400px;
+  width: 100%;
+  background: #252525;
+}
+
+.signin {
+  background: #125688;
+  width: 161px;
+  height: 280px;
+  border: 2px solid #222;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -51.5%);
+  transition: all .4s ease;
+	display:none;
+}
+
+.insta-intro-logo {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: 70px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  animation: insta-intro-logo .7s ease .5s forwards;
+}
+
+@keyframes insta-intro-logo {
+  to {
+    opacity: 1;
+  }
+}
+
+.login {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 24px;
+  width: 0px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  font-size: 11.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  animation: login .437s ease .937s forwards;
+}
+
+@keyframes login {
+  to {
+    width: 63px;
+  }
+}
+
+.insta-logo-bot {
+  position: relative;
+  top: 254px;
+  height: 23.5px;
+  width: 23.5px;
+  margin: auto auto;
+  transition: all .4s ease;
+}
+
+.loader {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader-svg {
+  height: 30px;
+  width: 30px;
+  animation: loader .8s ease .06s infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.insta-circ {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #125688;
+  position: absolute;
+  top: 245px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  display: none;
+}
+
+.bot-bar {
+  height: 26px;
+  width: 100%;
+  background: #125688;
+  position: absolute;
+  top: 280px;
+  transition: all .6s ease;
+  z-index: -2;
+}
+
+.top-bar {
+  height: 26px;
+  width: 100%;
+  background: #125688;
+  position: absolute;
+  top: -26px;
+  transition: all .6s ease;
+  z-index: -2;
+}
+
+.main-insta {
+  height: 228px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 26px;
+  z-index: -3;
+  display: none;
+  overflow: auto;
+}
+
+.post {
+  height: 200px;
+  width: 92%;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-left: 3.5%;
+  background: #ecf0f1;
+	border:1px rgba(51,51,51,0.1) solid ;
+}
+
+.post-top {
+  height: 30px;
+  width: 100%;
+}
+
+.post-image {
+  height: 120px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(https://ak-hdl.buzzfed.com/static/2013-12/enhanced/webdr02/10/11/grid-cell-31183-1386692354-8.jpg) center;
+  background-size: cover;
+}
+
+.post-like {
+  height: 30px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.circ-pers {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: url(http://www.photocase.com/stock-photos/285467-stock-photo-human-being-man-youth-young-adults-white-adults-face.jpg) center;
+  background-size: cover;
+  position:relative;
+  left: 14px;
+  top: 10px;
+}
+
+.pers-name {
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  position: relative;
+  top: -15px;
+  left:-24px;
+  font-size: 9px;
+  font-family: 'Lato', sans-serif;
+}
+
+.like {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  top: 1px;
+  left: 15px;
+}
+
+.like img {
+  height:12px;
+	width
+}
+
+.comment {
+  height: 12.5px;
+  width: 85px;
+  position: relative;
+  top: -14px;
+  left: 40px;
+  border: 0px;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif;
+  font-size: 8px;
+  padding-left: 10px;
+	outline:none;
+}
+
+.search{
+	position:relative;
+	top:-2px;
+	left:1px;
+	width:60px;
+	height:26px;
+	background:transparent;
+	text-align:center;
+	color:#fff;
+	font-family: 'Lato', sans-serif;
+	line-height:26px;
+	font-size:9px;
+}
+
+.profile{
+	position:relative;
+	top:-28px;
+	width:60px;
+	left:101px;
+	height:26px;
+	background:transparent;
+	color:#fff;
+	text-align:center;
+	line-height:26px;
+	font-family: 'Lato', sans-serif;
+	font-size:9px;
+}
+
+.insta-text{
+	position:relative;
+	top:0px;
+	left:0px;
+	width:161px;
+	height:26px;
+}
+
+.insta-text img{
+	height:22px;
+	width:auto;
+	position:relative;
+	top:3px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.scaller{
+	opacity:0;
+	height:0px;
+	width:0px;
+	z-index:-1;
+	transition:all .6s ease;
+}
+
+.insta-icon{
+	height:60px;
+	width:60px;
+	color:#fff;
+	text-align : center;
+	font-family: 'Lato', sans-serif;
+	position:relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	cursor:pointer;
+}
+
+.insta-icon img{
+	height:100%;
+	width:100%;
+	margin-bottom:3px;
+}
+
+.home-screen {
+  background: url(http://i0.wp.com/thezinx.com/wp-content/uploads/md-10.png) center;
+	background-size:cover;
+  width: 161px;
+  height: 280px;
+  border: 2px solid #222;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -51.5%);
+  transition: all .4s ease;
+}
